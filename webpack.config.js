@@ -13,8 +13,9 @@ module.exports = {
   mode: isProd ? "production" : "development",
   devtool: isProd ? "hidden-source-map" : "source-map",
   output: {
-    filename: "[name].js",
     path: path.join(__dirname, "/dist"),
+    filename: "[name].[chunkhash].js",
+    chunkFilename: "[name].[chunkhash].chunk.js",
   },
   resolve: {
     modules: ["node_modules"],
