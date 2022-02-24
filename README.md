@@ -9,3 +9,7 @@ frontend-boilerplate
 
 ### babel
 - @babel/core : 7.17.5
+
+### How to use
+- develop : npm run dev
+- production : npm run build
